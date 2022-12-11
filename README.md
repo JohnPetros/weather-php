@@ -29,7 +29,7 @@
 
 ## 💻 Projeto
 
-CRUD de informações climáticas de qualquer cidade do mundo
+CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolvido como dever de casa para matéria de Programação Web na Etec.
 
 ## ✅ Demonstração
 
@@ -43,14 +43,15 @@ CRUD de informações climáticas de qualquer cidade do mundo
 
 - Pesquisa e inserção de cidade
 - Listagem de cidades com suas respectivas informações climáticas:
-      .nome 
-      .bandeira do país o qual pertence 
-      .hora e data completa da consulta 
-      .temperatura em C° atual juntamente com temp. máx., mín. e sensação térmica
-      .clima
-      .pressão atmosférica
-      .umidade
-      .vel. do vento
+     *nome 
+     *bandeira do país o qual pertence 
+     *hora e data completa da consulta 
+     *temperatura em C° atual juntamente com temp. máx., mín. e sensação térmica
+     *clima
+     *pressão atmosférica
+     *umidade
+     *vel. do vento
+     *Imagem referente a cidade ou sua cultura
 - Alteração de cidades inseridas
 - Deleção de cidades inseridas tanto uma por vez, quanto todas de uma vez
 - Filtragem de cidades inseridas
@@ -78,6 +79,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias
 - JavaScript
 - CSS
 - HTML
+
+- API openweathermap para conculta do clima
+- API do unsplash para gerar as imagens
 
 <hr>
 
