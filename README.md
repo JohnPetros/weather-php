@@ -34,7 +34,6 @@ CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolv
 ## ✅ Demonstração
 
 ![Weather PHP - Google Chrome 11_12_2022 10_47_38](https://user-images.githubusercontent.com/93893533/206910452-2b83a325-1e15-476e-a192-0689670066c6.png)
-![weather-php-mobile](https://user-images.githubusercontent.com/93893533/206910422-17c8bec9-9aff-4823-ba06-946a2881535a.png)
 
 <hr>
 
