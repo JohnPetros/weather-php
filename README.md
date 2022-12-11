@@ -41,21 +41,12 @@ CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolv
 
 ## 🔗 Funcionalidades
 
-+ Pesquisa e inserção de cidade
-+ Listagem de cidades com suas respectivas informações climáticas:
-    +nome 
-    +bandeira do país o qual pertence 
-    +hora e data completa da consulta 
-    +temperatura em C° atual juntamente com temp. máx., mín. e sensação térmica
-    +clima
-    +pressão atmosférica
-    +umidade
-    +vel. do vento
-    +Imagem referente a cidade ou sua cultura
-+ Alteração de cidades inseridas
-+ Deleção de cidades inseridas tanto uma por vez, quanto todas de uma vez
-+ Filtragem de cidades inseridas
-+ Sistema de validação tanto no campo de pesquisa quanto no banco de dados
+- Pesquisa e inserção de cidade
+- Listagem de cidades com suas respectivas informações climáticas (nome; bandeira do país o qual pertence;  hora e data completa da consulta; temperatura em C° atual juntamente com temp. máx., mín. e sensação térmica; clima; pressão atmosférica; umidade vel. do vento e imagem referente a cidade ou sua cultura)
+- Alteração de cidades inseridas
+- Deleção de cidades inseridas tanto uma por vez, quanto todas de uma vez
+- Filtragem de cidades inseridas
+- Sistema de validação tanto no campo de pesquisa quanto no banco de dados
 
 <hr>
 
@@ -74,14 +65,19 @@ CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolv
 
 Esse projeto foi desenvolvido com as seguintes tecnologias
 
-- PHP
-- MySQL
-- JavaScript
-- CSS
-- HTML
+#### **Back-end**
 
-- API openweathermap para conculta do clima
-- API do unsplash para gerar as imagens
+- **[PHP](https://www.php.net/)**
+- **[MySQL](https://www.mysql.com)**
+- **[API OpenWeather](https://openweathermap.org/)**
+- **[API Unsplash Developers](https://unsplash.com/developers)**
+
+#### **Front-end**
+
+- **[JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)**
+- **[CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)**
+- **[HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)**
+- **[FontAwesome](https://fontawesome.com/)**
 
 <hr>
 
