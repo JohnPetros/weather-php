@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 08-Dez-2022 às 22:00
+-- Tempo de geração: 11-Dez-2022 às 16:00
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 7.4.29
 
@@ -50,9 +50,9 @@ CREATE TABLE `city` (
 --
 
 INSERT INTO `city` (`id`, `name`, `country`, `temp`, `weather`, `time`, `week_day`, `date`, `icon`, `pressure`, `humidity`, `wind`, `temp_max`, `temp_min`, `feels_like`) VALUES
-(92, 'São José dos Campos', 'BR', 30, 'algumas nuvens', '17:43:08', 'Quinta-feira', '08 de dezembro de 2022', '02d', 1009, 45, 3, 30, 29, 30),
-(94, 'Tokyo', 'JP', 7, 'nublado', '17:43:40', 'Quinta-feira', '08 de dezembro de 2022', '04n', 1022, 63, 4, 8, 5, 5),
-(95, 'Paris', 'FR', 2, 'nublado', '17:44:03', 'Quinta-feira', '08 de dezembro de 2022', '04n', 1008, 89, 2, 3, 1, 0);
+(96, 'Oslo', 'NO', -7, 'nublado', '10:17:09', 'Domingo', '11 de dezembro de 2022', '04d', 1014, 61, 2, -6, -8, -10),
+(98, 'Tokyo', 'JP', 8, 'chuva leve', '10:18:07', 'Domingo', '11 de dezembro de 2022', '10n', 1015, 67, 7, 10, 7, 5),
+(103, 'São Paulo', 'BR', 28, 'algumas nuvens', '10:24:16', 'Domingo', '11 de dezembro de 2022', '02d', 995, 58, 6, 28, 27, 29);
 
 --
 -- Índices para tabelas despejadas
@@ -73,7 +73,7 @@ ALTER TABLE `city`
 -- AUTO_INCREMENT de tabela `city`
 --
 ALTER TABLE `city`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=105;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
