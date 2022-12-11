@@ -1,0 +1,335 @@
+:root {
+  --background: #222831;
+  --red: #ff1e42;
+  --blue: #5151e5;
+  --green: #4cc3c7;
+  --white: #f1f1f1;
+  --black: #131417;
+
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.743);
+
+  --gradient: linear-gradient(135deg, var(--blue) 10%, var(--green) 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  border: none;
+  outline: none;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+html, body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
+
+form {
+  color: var(--white);
+  margin-top: 2rem;
+}
+
+form h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+form input {
+  background-color: inherit;
+  border-bottom: 1px solid var(--white);
+  font-size: 1.2rem;
+  color: var(--white);
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+button,
+.button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.8;
+}
+
+.search {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.delete-all {
+  background-color: var(--red);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  margin-left: .5rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.filter  {
+  margin: 1rem 0;
+  background-color: var(--white);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  color: #f1f1f1;
+  position: relative;
+}
+
+.city-data {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem 4rem 0 2rem;
+  overflow: hidden;
+  width: 15rem;
+  box-shadow: var(--shadow);
+
+  border-radius: 1rem 0 0 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.city-data:hover {
+  transform: scale(1.05) perspective(75rem) rotateY(10deg);
+}
+
+.city-data::after {
+  content: "";
+  overflow: hidden;
+  background-clip: content-box;
+
+  background: var(--gradient);
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.city-data main {
+  height: 100%;
+  z-index: 5;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+}
+
+.city-name {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.city-name .country {
+  width: 2rem;
+}
+
+.date,
+.day {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.city-weather .temp {
+  display: block;
+  font-size: 3rem;
+}
+
+.city-weather .weather {
+  display: flex;
+  align-items: center;
+}
+
+.city-weather > i {
+  font-size: 1.5rem;
+}
+
+.weather-data {
+  width: 15rem;
+  padding: 1.5rem 2.5rem;
+  background-color: var(--black);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.weather-data-list .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-data-list .item:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.weather-data-list .item dt {
+  font-weight: bold;
+}
+
+.weather-data-plus {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.weather-data-plus .item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  width: 2.5rem;
+  height: 5rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.weather-data-plus .item:hover {
+  transform: scale(1.1);
+}
+
+.weather-data-plus .item .title {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.weather-data-plus .item.max {
+  background-color: var(--red);
+}
+.weather-data-plus .item.min {
+  background-color: var(--blue);
+}
+
+.weather-data-plus .item.feels {
+  background-color: var(--green);
+}
+
+.change-city {
+  background: var(--gradient);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-city:hover {
+  transform: scale(0.9);
+}
+
+.delete-city {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: var(--red);
+  font-size: 1.2rem;
+}
+
+.empty {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--blue);
+}
+
+.modal {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  background-color: #131417;
+  box-shadow: var(--shadow);
+  transition: 0.5s;
+
+  padding: 2rem;
+  border-radius: 1rem;
+  z-index: 15;
+}
+
+.modal header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  max-width: 90%;
+  font-size: 1.2rem;
+}
+
+.modal header h2 {
+  margin: auto;
+  text-align: center;
+}
+
+.modal header .close {
+  color: var(--red);
+  font-size: 1.5rem;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.modal header .close:hover {
+  opacity: 0.8;
+}
+
+.modal button {
+  color: var(--white);
+}
+
+.fade {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.758);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal.hidden {
+  top: 110%;
+}
