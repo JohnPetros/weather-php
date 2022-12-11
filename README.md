@@ -45,6 +45,7 @@ CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolv
 - Deleção de cidades inseridas tanto uma por vez, quanto todas de uma vez
 - Filtragem de cidades inseridas
 - Sistema de validação tanto no campo de pesquisa quanto no banco de dados
+- Responsivo
 
 <hr>
 
