@@ -37,7 +37,7 @@ CRUD de informações climáticas de qualquer cidade do mundo. Projeto desenvolv
 
 <hr>
 
-## 🔗 Funcionalidades
+## ✨ Funcionalidades
 
 - Pesquisa e inserção de cidade
 - Listagem de cidades com suas respectivas informações climáticas (nome; bandeira do país o qual pertence;  hora e data completa da consulta; temperatura em C° atual juntamente com temp. máx., mín. e sensação térmica; clima; pressão atmosférica; umidade vel. do vento e imagem referente a cidade ou sua cultura)

@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-require_once '../db/connect.php';
-require_once '../helpers/clear.php';
-require_once '../api/index.php';
-require_once '../helpers/handle_date.php';
+include '../db/connect.php';
+include '../helpers/clear.php';
+include '../api/index.php';
+include '../helpers/handle_date.php';
 
 $city = clear($_POST['city']);
 
